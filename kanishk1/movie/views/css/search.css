@@ -1,0 +1,48 @@
+
+
+*{
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+  
+}
+
+.background{
+    background: url("movie.jpg") 0px    no-repeat;
+    height: 100%;
+    width:100%;
+    margin-top:0;
+}
+
+.head1{
+     
+     text-align: center;
+     font-size:40px;
+    
+     padding:170px 5px 5px 5px;
+     color:white;
+      
+
+}
+
+#btn{
+
+    color:rgb(7, 7, 7);
+    background-color:rgba(250, 245, 245, 0.37);
+    text-align: center;
+    margin-left: 41%;
+    margin-top: 50px;
+    font-size:25px;
+    padding: 5px 8px 5px 8px;
+    border-radius:5px;
+    border:2px solid rgba(250, 245, 245, 0.541);
+    font-weight: bold;
+    cursor: pointer;
+}
+
+#btn:hover
+{
+    background-color: black;
+    cursor: pointer;
+    color:white;
+    border:2px solid rgb(8, 8, 8);
+}

@@ -1,10 +1,28 @@
-<h1>
-	hey there, your movie recommendations are :
-</h1>
-<% for( var i=0;i<movie["Search"].length; i++) {  %>
-	<li> <%= movie["Search"][i]["Title"] %>  </li>
-<% }  %>
 
+<link rel="stylesheet" href="css/result.css">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+
+<body class="background">
+	
+
+<h1 class="head2">
+	Hey there, your movie recommendations are :
+</h1>
+<% 
+   for( var i=0;i<movie["Search"].length; i++) 
+   {%>
+
+	<li>
+		 <%= movie["Search"][i]["Title"] %>  
+	</li>
+
+    <%} 
+
+ %>
+</body>
 	 
     
 	 

@@ -1,0 +1,30 @@
+*{
+    margin : 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+.background{
+
+    background: url("movie2.jpg") 0px    no-repeat;
+    height: 100%;
+    width:100%;
+    margin-top:0;
+}
+
+.head2{
+     font-size: 45px;
+     color: rgb(245, 215, 48);
+     padding-top: 20px;
+     padding-left: 20px;
+     /* background-color:white; */
+     text-align: center;
+}
+
+li {
+    color: white;
+    padding-left: 20px;
+    padding-top: 18px;
+    font-size:28px;
+    font-weight:bold;
+    text-align: center;
+}

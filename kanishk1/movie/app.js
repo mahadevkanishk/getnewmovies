@@ -1,29 +1,27 @@
 var express=require("express");
 var app=express();
 var request= require("request");
+var randomWords=require("random-words");
+
+app.use(express.static('views'))
+app.use('/css',express.static(__dirname + 'views/css'))
+
 
 app.set("view engine","ejs");
 
-var movies =[];
-var i;
+
 
     app.get("/",function(req,res){
-	request('https://random-word-form.herokuapp.com/random/noun',function (error, response, body){
-	 if (!error && response.statusCode == 200 ){
-		var newword = body ;
-		movies.push(newword); 
-		i= movies.indexOf(newword); 
-		 res.render('search');
-		 
-	 }
-	});
+	res.render('search');
 });
+
+
  
 
 app.get("/result",function(req,res){
 	
   	
-  request('https://www.omdbapi.com/?apikey=4865e2ca&s=' + movies[i] , function (error, response, body) {
+  request('https://www.omdbapi.com/?apikey=4865e2ca&s=' + randomWords() , function (error, response, body) {
   if(!error && response.statusCode  == 200){
 	  var movie = JSON.parse(body);
 	 
